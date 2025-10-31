@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Index · Danh sách bài tập</title>
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#111a2b;
+      --muted:#9db0cc;
+      --accent:#2aa4ff;
+      --border:#22314b;
+      --text:#e9f1ff;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; background: radial-gradient(120% 120% at 0% 0%, #0f1a30 0%, #0b1220 55%);
+      color:var(--text); font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial,"Noto Sans",sans-serif;
+    }
+    .container{max-width:1024px; margin:0 auto; padding:28px 18px 60px;}
+    header{display:flex; gap:18px; align-items:center; padding:16px; border:1px solid var(--border); border-radius:16px; background:var(--card); box-shadow:0 12px 40px rgba(0,0,0,.25)}
+    header img{width:88px; height:88px; border-radius:16px; object-fit:cover; border:2px solid var(--border); background:#1b2740}
+    .me h1{margin:0 0 6px; font-size:24px}
+    .me p{margin:2px 0; color:var(--muted)}
+    .social{display:flex; flex-wrap:wrap; gap:8px; margin-top:8px}
+    .social a{display:inline-block; padding:8px 12px; border:1px solid var(--border); border-radius:999px; color:var(--text); text-decoration:none; background:#0e1a2f}
+    .social a:hover{background:#0f223e; border-color:#2a3b59}
+    h2{margin:26px 0 12px; font-size:20px; letter-spacing:.2px}
+    .grid{display:grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap:14px}
+    .card{background:var(--card); border:1px solid var(--border); border-radius:16px; padding:16px; display:flex; flex-direction:column; gap:8px; box-shadow:0 10px 30px rgba(0,0,0,.22)}
+    .card h3{margin:0; font-size:18px}
+    .card p{margin:0; color:var(--muted); min-height:40px}
+    .card a.btn{margin-top:auto; display:inline-block; text-align:center; text-decoration:none; padding:10px 12px; border-radius:10px; background:var(--accent); color:white; font-weight:600}
+    .card a.btn:hover{filter:brightness(1.05)}
+    footer{margin-top:28px; color:var(--muted); text-align:center}
+    @media (max-width:560px){
+      header{flex-direction:column; align-items:flex-start}
+      header img{width:76px; height:76px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <!-- Đặt ảnh thật vào thư mục images/avatar.jpg -->
+      <img src="https://lapaw.vn/wp-content/uploads/2025/09/Cach-phong-ngua-cho-bi-ong-dot.jpg" alt="Ảnh cá nhân (thay bằng ảnh thật)" />
+      <div class="me">
+         <h1>Sinh Quốc Trung</h1>
+        <p>Email: <a href="trungsinh.31231024040@st.ueh.edu.vn" style="color:#9bd1ff; text-decoration:none">trungsinh.31231024040@ueh.edu.vn</a></p>
+        <p>Lớp / Mã SV (tuỳ chọn): 31231024040</p>
+        <div class="social">
+          <a href="https://www.facebook.com/quoc.trung.195873" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://github.com/trungsinh31231024040-max/sinh-quoctrung/" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </header>
+
+    <h2>Danh sách bài tập</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Bài tập 2</h3>
+        <p>HTML cơ bản, thẻ tiêu đề, ảnh, liên kết.</p>
+        <a class="btn" href="tuan3/venha/baitap2.html">Mở bài 2</a>
+      </div>
+      <div class="card">
+        <h3>Bài tập 4</h3>
+        <p>Định dạng chữ, nền lặp logo BIT, khung ellipsis.</p>
+        <a class="btn" href="tuan3/venha/baitap4.html">Mở bài 4</a>
+      </div>
+      <div class="card">
+        <h3>Bài tập 5</h3>
+        <p>Thực hành CSS (nếu có).</p>
+        <a class="btn" href="tuan3/venha/baitap5.html">Mở bài 5</a>
+      </div>
+      <div class="card">
+        <h3>Bài tập 6</h3>
+        <p>Menu tabs với display:inline-block.</p>
+        <a class="btn" href="tuan3/venha/baitap6.html">Mở bài 6</a>
+      </div>
+      <div class="card">
+        <h3>Bài tập 7</h3>
+        <p>Portfolio: tabs + gallery lưới.</p>
+        <a class="btn" href="tuan3/venha/baitap7.html">Mở bài 7</a>
+      </div>
+      <div class="card">
+        <h3>Bài tập 8</h3>
+        <p>Portfolio (bản responsive, có ảnh fallback).</p>
+        <a class="btn" href="tuan3/venha/baitap8.html">Mở bài 8</a>
+      </div>
+      <div class="card">
+        <h3>Bài tập 9</h3>
+        <p>Nội dung khác…</p>
+        <a class="btn" href="tuan3/venha/baitap9.html">Mở bài 9</a>
+      </div>
+    </div>
+
+    <footer>
+      Tạo bởi sinh viên · Cập nhật: <span id="date"></span>
+    </footer>
+  </div>
+  <script>
+    document.getElementById('date').textContent = new Date().toLocaleDateString('vi-VN');
+  </script>
+</body>
+</html>
